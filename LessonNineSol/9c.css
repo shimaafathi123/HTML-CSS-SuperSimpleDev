@@ -1,0 +1,9 @@
+div{
+    border-width: 1px;
+    border-style: solid;
+    width: 300px;
+    border-color: rgb(150, 150, 150);
+    padding-left: 12px;
+    padding-bottom: 12px;
+}
+
