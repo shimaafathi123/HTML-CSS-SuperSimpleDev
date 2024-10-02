@@ -1,0 +1,29 @@
+body{
+    height: 3000px
+}
+
+.shirt-container{
+    position: relative;
+    display: inline-block;
+
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.sale{
+    position: absolute;
+    background-color: black;
+    color: white;
+    border: none;
+    top: 10px;
+    right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: Arial;
+    font-size: 10px;
+}
