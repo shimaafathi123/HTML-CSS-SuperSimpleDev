@@ -22,6 +22,7 @@
     justify-content: space-between;
 }
 .icon{
+    cursor: pointer;
     height: 24px;
 }
 .middle-section{
@@ -59,6 +60,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .voice-search-button{
     height: 40px;
@@ -81,8 +83,62 @@
     margin-left: 29px;
 }
 .profile-pic{
+    cursor: pointer;
     width: 30px;
     height: 30px;
     object-fit: cover;
     border-radius: 20px;
 }
+
+.icon-tip{
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -50px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .icon-tip{
+    opacity: 1;
+}
+
+.voice-search-button:hover .icon-tip{
+    opacity: 1;
+}
+.tooltip-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.tip-container:hover .icon-tip{
+    opacity: 1;
+}
+.notifications-icon-container {
+    position: relative;
+    
+  }
+  .notifications-icon-container:hover .icon-tip{
+    opacity: 1;
+  }
+  
+  .notifications-count {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+  }
+
